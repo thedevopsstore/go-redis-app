@@ -31,5 +31,3 @@ jobs:
           context: .
           push: false
           tags: $(date +%s)
-
-    - run: echo "🍏 This job's status is ${{ job.status }}."
