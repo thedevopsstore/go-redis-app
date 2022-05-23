@@ -27,7 +27,6 @@ jobs:
 
       - name: echo variables
         run: echo "This is the job id ${{ job.id }}."
-        run: echo "this is job id ${{ job.id.id }}}."
         
       
       - name: Build and push Docker image
