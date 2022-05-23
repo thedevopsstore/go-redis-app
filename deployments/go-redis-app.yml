@@ -3,6 +3,8 @@ apiVersion: apps/v1
 kind: Deployment                 # Type of Kubernetes resource
 metadata:
   name: go-redis-app             # Unique name of the Kubernetes resource
+  annotations:
+    fluxcd.io/automated: "true"  
 spec:
   replicas: 1                 # Number of pods to run at any given time
   selector:
