@@ -16,7 +16,11 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
 
+
     steps:
+
+      - name: echo variables
+        run: echo "these are variabkes ${{ jobs.push_to_registry.env }} "
       - name: Check out the repo
         uses: actions/checkout@v3
 
