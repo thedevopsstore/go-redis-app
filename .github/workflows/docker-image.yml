@@ -46,4 +46,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: "${{ env.repo }}/${{ env.image }}:${{ github.run_id }}"
+          tags: lwplapbs/go-redis-app:"${{ github.run_id }}"
