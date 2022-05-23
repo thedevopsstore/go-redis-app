@@ -16,7 +16,7 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Welcome! Please hit this page `/qod` API to get the quote of the day."))
+	w.Write([]byte("Welcome! Please hit this pages `/qod` API to get the quote of the day."))
 }
 
 func quoteOfTheDayHandler(client *redis.Client) http.HandlerFunc {
