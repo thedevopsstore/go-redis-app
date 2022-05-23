@@ -17,3 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag lwplapbs/go-regis-app:$(date +%s)
     - run: echo "🍏 This job's status is ${{ job.status }}."
+    - run: echo "This is the job id ${{ job.id }}."
