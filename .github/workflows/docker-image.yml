@@ -1,10 +1,15 @@
-name: Docker Image CI
+name: Create and publish a Docker image
+
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+
+env:
+  IMAGE_NAME: ${{ github.repository }}
+
 
 jobs:
 
@@ -17,4 +22,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag lwplapbs/go-regis-app:$(date +%s)
     - run: echo "🍏 This job's status is ${{ job.status }}."
-    - run: echo "This is the job id ${{ job.id }}."
+    - run: echo "This is the job id ${{ env.IMAGE_NAME }}."
