@@ -48,16 +48,5 @@ jobs:
           push: true
           tags: lwplapbs/go-redis-app:${{ github.run_id }}
 
-  deploy_k8s:
-    name: deploy the application
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v3
-
-      - name: Check kubectl version
-        run: kubectl version --short
-
 
 
