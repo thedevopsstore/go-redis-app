@@ -49,7 +49,7 @@ jobs:
           tags: lwplapbs/go-redis-app:${{ github.run_id }}
 
   deploy_k8s:
-    name: Push Docker image to Docker Hub
+    name: deploy the application
     runs-on: ubuntu-latest
 
     steps:
