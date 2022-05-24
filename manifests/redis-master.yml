@@ -21,7 +21,7 @@ spec:
     spec:            # Spec for the container which will be run inside the Pod.
       containers:
       - name: master
-        image: redis
+        image: docker.io/redis
         command:
           - redis-server
           - "/redis/redis.conf"

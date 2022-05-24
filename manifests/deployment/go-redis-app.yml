@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: go-redis-app
-        image: lwplapbs/go-redis-app:2374891001
+        image: docker.io/lwplapbs/go-redis-app:2374891001
         imagePullPolicy: IfNotPresent
         resources:
           requests:
