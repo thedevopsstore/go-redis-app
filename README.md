@@ -68,5 +68,4 @@ kubectl exec -it <redis-master-pod> -- redis-cli
 # Check maxmemory-policy:
 
 127.0.0.1:6379> CONFIG GET maxmemory-policy
-
 ```
